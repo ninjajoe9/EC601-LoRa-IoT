@@ -4,7 +4,7 @@
 
 ### Objective 1
 
-Build a software interface to easily implement micro-controler applications into LoRa communication networks (LoRa/LoRaWAN) specifically for robotics and sensing applications.
+Build a software interface to easily implement microcontroller applications into LoRa communication networks (LoRa/LoRaWAN) specifically for robotics and sensing applications.
 
 ### Objective 2
 
@@ -18,7 +18,7 @@ To the best of our knowledge, no open-source software package for robotics inter
 
 ### Minimum Value Product
 
-For robotics and sensor developers who deploy devices in areas a long distance from each other and physically away from other communication technologies.  Our product is a software package that interprets a serial message from a microcontroler at one node, sends the message via LoRa to another LoRa Node, and delivers the message to a second microcontroler at that node. Unlinke other LoRa software packages that have to be learned and interpreted to implement into specific code bases, this software package translates the LoRa protocols into serial communication for ease of implementation into any code base.
+For robotics and sensor developers who deploy devices in areas a long distance from each other and physically away from other communication technologies.  Our product is a software package that interprets a serial message from a microcontroller at one node, sends the message via LoRa to another LoRa Node, and delivers the message to a second microcontroller at that node. Unlike other LoRa software packages that have to be learned and interpreted to implement into specific code bases, this software package translates the LoRa protocols into serial communication for ease of implementation into any code base.
 
 ### User Stories
 
