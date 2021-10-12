@@ -14,8 +14,6 @@ create an interface for LoRaWAN on the FABRIC testbed network to enable research
 
 To the best of our knowledge, no open-source software package for robotics interface into LoRa exists, and most researchers build their interface individually for each project. While many libraries exist for LoRa in general and fairly easy to implement, we seek to develop a 'plug-and-play' solution to take any existing micro-controller based project that could benefit from low powered long range communication, and add LoRa to their project through a number of common serial protocols.
 
-![](LoRa-topology.png)
-
 ## MVP and MVP User stories
 
 ### Minimum Value Product
@@ -43,6 +41,8 @@ LoRaWAN
 
 - Extends range of LoRa to the span of the Internet
 - 40,000+ existing Gateways
+
+![](LoRa-topology.png)
 
 ## Development Environment setup
 
