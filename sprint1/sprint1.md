@@ -53,7 +53,7 @@ Discord will be used for all team messaging communication.
 ## Sprint 2 Plan
 
 - Play with LoRa libraries for ESP32 microcontrollers and successfully test sending signals at distance to gain familiarity with protocol.
--Range Testing in Urban Environment
+- Range Testing in Urban Environment
 - Identify places where we encounter challenges to develop list of software optimizations we can include in our package.
 
 ## Future Sprint Plans
