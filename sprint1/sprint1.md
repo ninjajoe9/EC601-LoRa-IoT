@@ -55,7 +55,7 @@ Discord will be used for all team messaging communication.
 - Play with LoRa libraries for ESP32 microcontrollers and successfully test sending signals at distance to gain familiarity with protocol.
 - Identify places where we encounter challenges to develop list of software optimizations we can include in our package.
 
-##Future Sprint Plans
+## Future Sprint Plans
 
 - Build package for local mesh of LoRa Nodes
 - Replicate above experimentation, but with LoRaWAN (requires LoRaWAN Gateways)
