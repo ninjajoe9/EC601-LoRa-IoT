@@ -12,7 +12,8 @@
 ## Results
 
 - LoRa Gateway established
-![Gateway confirmed](https://github.com/ninjajoe9/EC601-LoRa-IoT/tree/main/sprint2/Gateway-setup.png)
-![Live Data](https://github.com/ninjajoe9/EC601-LoRa-IoT/tree/main/sprint2/Gateway-live-data.png)
+<img src="https://github.com/ninjajoe9/EC601-LoRa-IoT/tree/main/sprint2/Gateway-setup.png" alt="PGateway confirmed" width="500"/>
+<img src="https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/sprint2/Gateway-live-data.png" alt="Live Data" width="500"/>
+
 
 - ESP32 Communication Pushed to Sprint 3
