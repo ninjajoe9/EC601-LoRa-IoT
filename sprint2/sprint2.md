@@ -12,7 +12,7 @@
 ## Results
 
 - LoRa Gateway established
-<img src="https://github.com/ninjajoe9/EC601-LoRa-IoT/tree/main/sprint2/Gateway-setup.png" alt="Gateway confirmed" width="500"/>
+<img src="https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/sprint2/Gateway-setup.png" alt="Gateway confirmed" width="500"/>
 <img src="https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/sprint2/Gateway-live-data.png" alt="Live Data" width="500"/>
 
 
