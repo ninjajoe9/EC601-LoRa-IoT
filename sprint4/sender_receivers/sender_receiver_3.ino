@@ -8,18 +8,21 @@
   this project also realess in GitHub:
   https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series
 */
+
 #include "heltec.h"
 #define BAND    915E6  //you can set band here directly,e.g. 868E6,915E6
-#define ADDRESS 0x12
+#define ADDRESS 0x14
 
-
+int count1 = 0;
+int count2 = 0;
+int count3 = 0;
 int counter = 0;
-int sensor1 = 0;
-int sensor2 = 0;
-int sensor3 = 0;
-int value1 = 0;
-int value2 = 0;
-int value3 = 0;
+String sensor1 = "0";
+String sensor2 = "0";
+String sensor3 = "0";
+String value1 = "0";
+String value2 = "0";
+String value3 = "0";
 
 
 void setup() {
@@ -59,17 +62,20 @@ void loop() {
   
   if(digitalRead(2) == HIGH){
     if(ADDRESS == 0x12){
-      sensor1 = 25;
-      value1 += 1;
+      sensor1 = "25";
+      count1++;
+      value1 = int(count1);
     }
   
     if(ADDRESS == 0x13 ){
-      sensor2 = 25;
-      value2 += 1;
+      sensor2 = "25";
+      count2++;
+      value2 = int(count2);
     }
     if(ADDRESS == 0x14){
-      sensor3 = 25;
-      value3 += 1;
+      sensor3 = "25";
+      count3++;
+      value3 = int(count3);
     }
 
 
