@@ -8,9 +8,9 @@
 class LoRaPins
 {
   public:
-    LoraPins();
-    void recievePins();
-    void sendPins();
+    LoRaPins(String Node);
+    int recievePins();
+    void sendPins(int pin, int pinVal);
 };
 
 #endif

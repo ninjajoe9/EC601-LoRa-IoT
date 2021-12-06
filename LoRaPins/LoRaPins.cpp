@@ -2,12 +2,27 @@
 
 #include "Arduino.h"
 #include "LoRaPins.h"
+#include "heltec.h"
 
-LoRaPins::LoRaPins()
+String self = String();
+
+//Recieve variables
+String inNode = String();
+String s1string = String();
+String v1string = String();
+int sensor1;
+int value;
+
+//Send variabless
+int counter;
+
+
+LoRaPins::LoRaPins(String Node)
 {
+  self = Node;
 }
 
-void LoRaPins::recievePins(){
+int LoRaPins::recievePins(){
     int packetSize = LoRa.parsePacket();
   if (packetSize) {
     // received a packet
@@ -18,15 +33,16 @@ void LoRaPins::recievePins(){
       s1string = LoRa.readStringUntil(',');
       v1string = LoRa.readStringUntil('|');
       sensor1 = s1string.toInt();
-      value1 = v1string.toInt();
+      value = v1string.toInt();
       }
     // print RSSI of packet
     Serial.print("with RSSI ");
     Serial.println(LoRa.packetRssi());
+    return value;
   }
 }
 
-void LoRaPins::sendPins(){
+void LoRaPins::sendPins(int pin, int pinVal){
     Serial.print("Sending sensor status ");
     Serial.println(counter);
     counter += 1;
@@ -34,9 +50,9 @@ void LoRaPins::sendPins(){
     LoRa.setTxPower(14,RF_PACONFIG_PASELECT_PABOOST);
     LoRa.print(self);
     LoRa.print(":");
-    LoRa.print(sensor1);
+    LoRa.print(pin);
     LoRa.print(",");
-    LoRa.print(curVal1);
+    LoRa.print(pinVal);
     LoRa.print("|");
     LoRa.endPacket();
 }
