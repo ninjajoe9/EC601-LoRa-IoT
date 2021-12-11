@@ -25,13 +25,13 @@ Currently LoRa Pins is only implemented on the [Heltec32 LoRa 32](https://heltec
 ## Design Process
 Convienient links for those associated with Boston University EC601 Product Design, or those grading the design sprints (Looking at you Prof. Alshaykh)
 
-[Sprint 1](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/sprint1/sprint1.md) - initial project intent, research, and design overview. (includes MVP and User stories) (NOTE: Project has changed drasticall from original Vision)
+[Sprint 1](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint1/sprint1.md) - initial project intent, research, and design overview. (includes MVP and User stories) (NOTE: Project has changed drasticall from original Vision)
 
-[Sprint 2]()
+[Sprint 2](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint2/sprint2.md)
 
-[Sprint 3]()
+[Sprint 3](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint3/sprint3.md)
 
-[Sprint 4]()
+[Sprint 4](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/sprint4.md)
 
 ## Questions/comments?
 
