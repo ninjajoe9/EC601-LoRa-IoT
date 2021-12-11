@@ -4,6 +4,7 @@ An Arduino/Python Library for controling the GPIO pins of multiple microcontrole
 ## Why LoRa?
 
 ![LoRa Logo](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/resources/LoRa-logo.png)
+
 (for Mani or JueHao, whoever gets to it first. poossibly just copy pate from the poster.
 
 ## What LoRaPins does for you
