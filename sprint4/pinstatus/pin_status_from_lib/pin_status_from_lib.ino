@@ -18,7 +18,7 @@ LoRaPins LP(thisNode);
 int value1;
 int curVal1;
 #define sense1 2
-z
+
 
 
 void setup() {

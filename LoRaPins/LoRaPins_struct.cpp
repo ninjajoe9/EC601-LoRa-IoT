@@ -35,8 +35,8 @@ int LoRaPins::recievePins(){
       lr.inNode = LoRa.readStringUntil(':');
       lr.s1string = LoRa.readStringUntil(',');
       lr.v1string = LoRa.readStringUntil('|');
-      lr.sensor1 = s1string.toInt();
-      lr.value = v1string.toInt();
+      lr.sensor1 = lr.s1string.toInt();
+      lr.value = lr.v1string.toInt();
       }
     // print RSSI of packet
     Serial.print("with RSSI ");
