@@ -1,4 +1,4 @@
-# EC601-LoRa-IoT
+# LoRaPins
 An Arduino/Python Library for controling the GPIO pins of multiple microcontroler devices over LoRa communiccation protocol
 
 ## Why LoRa?
