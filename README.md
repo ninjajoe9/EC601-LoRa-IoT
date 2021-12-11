@@ -29,4 +29,4 @@ Convienient links for those associated with Boston University EC601 Product Desi
 
 ## Questions/comments?
 
-Please feel free to leave an issue or contact (Jack Locke)[mailto:lockej@bu.edu]
+Please feel free to leave an issue or contact [Jack Locke](mailto:lockej@bu.edu)
