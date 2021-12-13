@@ -24,7 +24,10 @@ Currently LoRa Pins is only implemented on the [Heltec32 LoRa 32](https://heltec
 (jack will probably work on this)
 
 ## Future plans/implementation goals
-(whoever gets to this)
+- Adding the functionalities to implement communication through the LoRaWAN Gateway from the local mesh network to another mesh network.
+- Creating a simple User Interface that takes in details of the number of pins required and converts it into a JSON format which can be used by the software package to assign GPIO pins accordingly.
+- Make the package more robust such that n number of GPIO pins can be implemented.
+
 
 ## Design Process
 Convenient links for those associated with Boston University EC601 Product Design, or those grading the design sprints (Looking at you Prof. Alshaykh)
