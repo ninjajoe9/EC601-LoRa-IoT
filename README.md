@@ -20,8 +20,26 @@ Currently LoRa Pins is only implemented on the [Heltec32 LoRa 32](https://heltec
 
 
 
-## Quick setup guide
-(jack will probably work on this)
+## Quick setup guide - A digital implementation of LoRa LED "Pagers"
+
+This is an example of how to use this library to build a mesh of 'pagers' to demonstrate the most basic functionality of the LoRaPins libarary. It allows the user to configure 2 or more Nodes that will recieve a broadcast from any other Node and cause a LED to blink on all the other nodes. Further implementation of addressing and use of multiple pins can be expanded form here, and soon a 'configuration wizard' will be complete to allow for automatic addressing and pin configuration on all nodes. Additionally an example sketch exists [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec_servo/pin_status_send_rec_servo.ino) to use analog values from 0-255 instead of digital on/off values in this implementation.  
+
+As mentioned above, LoRaPins is currectly only implemented for Heltec ESP32 LoRa development boards, however use on other boards could be easily implemented by using the `#include "lora.h"` instead of `#include "heltec.h"` at the beginning of your library. Please feel free to reach out if you have any questions with this method. 
+
+Step 1: Add LoRaPins library to your Arduino Library
+
+Follow [THIS](https://www.arduino.cc/en/guide/libraries) guide using the 'Manual Installation' instructions to add the folder LoRaPins to your arduino 'libraries' folder. 
+
+Step 2: Configure Heltec boards
+
+Use this wiring diagram to attach and LED and a momentary push button to all Nodes in your mesh 
+
+::INSERT DIAGRAM HERE::
+
+Step 3: Program Boards
+
+Push the [sketch](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_from_lib/pin_status_from_lib.ino) to each board. (for best practice, change line 15 of each board `String thisNode = String("Node2");` to give each node a unique name. While this will not break the code, it will lead to some confusion if you are using serial monitoring to view signal output betwen boards if they are all named the same thing)
+
 
 ## Future plans/implementation goals
 - Adding the functionalities to implement communication through the LoRaWAN Gateway from the local mesh network to another mesh network.
