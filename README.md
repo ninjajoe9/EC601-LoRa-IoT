@@ -87,3 +87,10 @@ Convenient links for those associated with Boston University EC601 Product Desig
 ## Questions/comments?
 
 Please feel free to leave an issue or contact [Jack Locke](mailto:lockej@bu.edu)
+
+## Additional Resources
+
+[LoRa wikipedia] (https://en.m.wikipedia.org/wiki/LoRa)
+[LoRa Basics] (https://youtu.be/hMOwbNUpDQA)
+[LoRa main page] (https://lora-alliance.org/)
+[The Things Network main page] (https://www.thethingsnetwork.org/)
