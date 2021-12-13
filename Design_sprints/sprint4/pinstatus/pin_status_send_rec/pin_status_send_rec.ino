@@ -1,19 +1,12 @@
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 #include "heltec.h"
-//#include <LoRaPins.h>
 using namespace std;
 
 #define BAND    915E6  //you can set band here directly,e.g. 868E6,915E6
 
-//const int nodes = 2;
-
-//constant sensors = 1;
-
-//int pinArray[nodes][pins] = {{0},{0}}
-
+// INSERT NODE NAME HERE AND MODIFY FOR EVERYBOARD YOU INTEND TO USE THIS ON
 String self = String("Node2");
-//LoRaPins LP(self);
 
 
 //Recieve variables
@@ -23,8 +16,6 @@ String v1string = String();
 int sensor1 = 0;
 int value1 = 0;
 
-
-
 //Send variabless
 int counter = 0;
 int curVal1 = 0;
@@ -33,25 +24,24 @@ int curVal1 = 0;
 
 void setup() {
   Heltec.begin(true /*DisplayEnable Enable*/, true /*Heltec.LoRa Disable*/, true /*Serial Enable*/, true /*PABOOST Enable*/, BAND /*long BAND*/);
-
 }
+
 
 void loop() {
   recievePins();
-  //LP.recievePins();
 
   if (value1 == HIGH){
     digitalWrite(25, HIGH);
   }else 
     digitalWrite(25, LOW);
-
   
   if(curVal1 != digitalRead(sense1)){
     curVal1 = digitalRead(sense1);
     sendPins();
-    //LP.sendPins();
   }
-/*
+  
+// ONLY MODIFY IF YOU NEED TO CONFIGURE POWER SETTINGS FOR YOUR ENVIRONMENT (See main LoRa Documentation)  
+/*  
 * LoRa.setTxPower(txPower,RFOUT_pin);
 * txPower -- 0 ~ 20
 * RFOUT_pin could be RF_PACONFIG_PASELECT_PABOOST or RF_PACONFIG_PASELECT_RFO
