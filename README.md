@@ -56,9 +56,9 @@ Troublshooting:
 
 - Double check your wiring and pin configuration. If you're not using the same pins as in the diagram, make sure you modify the pins in the code as well. (*WARNING:*  Not all pins on the Heltec ESP32 LoRa board are availible for use like a regular ESP32 microcontroler, as some are predesignated for OLED display and LoRa function. 
 
--If you are unable to get the LoRaPins library implemented in to your Arduino Library, try pushing the manually implemented version of the code found [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec/pin_status_send_rec.ino). Then you can just use the embedded functions to handle the LoRa Strings for you. 
+- If you are unable to get the LoRaPins library implemented in to your Arduino Library, try pushing the manually implemented version of the code found [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec/pin_status_send_rec.ino). Then you can just use the embedded functions to handle the LoRa Strings for you. 
 
--If you are unable to boot to the board and you are stuck in a communication loop `...---...---`, and you're using Analog devices like a potentiometer, ensure the potentiometer isn't causing undue resistance on your circuit during booting and turn the resistance all the way down. 
+- If you are unable to boot to the board and you are stuck in a communication loop `...---...---`, and you're using Analog devices like a potentiometer, ensure the potentiometer isn't causing undue resistance on your circuit during booting and turn the resistance all the way down. 
 
 These are just a few probelms we ran into that were difficult to troubleshoot when we were developing this library. If you need help, please create an issue and we'll endevor to fix it. If enough people have similar issues we'll add them to the troublshooting list, so getting your own help will help others! 
 
