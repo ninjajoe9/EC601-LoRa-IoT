@@ -32,7 +32,9 @@ Follow [THIS](https://www.arduino.cc/en/guide/libraries) guide using the 'Manual
 
 **Step 2: Configure Heltec boards**
 
-Use this wiring diagram to attach and LED and a momentary push button to all Nodes in your mesh 
+Use this wiring diagram to attach and LED and a momentary push button to all Nodes in your network. 
+
+(*WARNING:* ENSURE YOU ATTACH THE ANTENNA to the u.FL connector before powering on the board. Failure to do so can cause damage to the board and may result in inability to use for LoRa radio communication.) 
 
 ::INSERT DIAGRAM HERE::
 ![Diagram]()
@@ -54,7 +56,7 @@ If your LoRa pagers work, Great! Feel free to modify the libraries and enhance t
 
 Troublshooting: 
 
-- Double check your wiring and pin configuration. If you're not using the same pins as in the diagram, make sure you modify the pins in the code as well. (*WARNING:*  Not all pins on the Heltec ESP32 LoRa board are availible for use like a regular ESP32 microcontroler, as some are predesignated for OLED display and LoRa function. 
+- Double check your wiring and pin configuration. If you're not using the same pins as in the diagram, make sure you modify the pins in the code as well. (*WARNING:*  Not all pins on the Heltec ESP32 LoRa board are availible for use like a regular ESP32 microcontroler, as some are predesignated for OLED display and LoRa function.) 
 
 - If you are unable to get the LoRaPins library implemented in to your Arduino Library, try pushing the manually implemented version of the code found [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec/pin_status_send_rec.ino). Then you can just use the embedded functions to handle the LoRa Strings for you. 
 
