@@ -38,6 +38,7 @@ Use this wiring diagram to attach and LED and a momentary push button to all Nod
 
 ::INSERT DIAGRAM HERE::
 ![Diagram]()
+![Photo on breadboard]()
 
 **Step 3: Program Boards**
 
