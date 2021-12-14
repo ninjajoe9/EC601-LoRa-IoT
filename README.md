@@ -36,9 +36,8 @@ Use this wiring diagram to attach and LED and a momentary push button to all Nod
 
 (*WARNING:* ENSURE YOU ATTACH THE ANTENNA to the u.FL connector before powering on the board. Failure to do so can cause damage to the board and may result in inability to use for LoRa radio communication.) 
 
-::INSERT DIAGRAM HERE::
-![Diagram]()
-![Photo on breadboard]()
+![Diagram](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/resources/CircuitDiagram.jpeg)
+![Photo on breadboard](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/resources/CircuitPhoto.jpeg)
 
 **Step 3: Program Boards**
 
@@ -90,7 +89,7 @@ Please feel free to leave an issue or contact [Jack Locke](mailto:lockej@bu.edu)
 
 ## Additional Resources
 
-[LoRa wikipedia] (https://en.m.wikipedia.org/wiki/LoRa)
-[LoRa Basics] (https://youtu.be/hMOwbNUpDQA)
-[LoRa main page] (https://lora-alliance.org/)
-[The Things Network main page] (https://www.thethingsnetwork.org/)
+[LoRa wikipedia](https://en.m.wikipedia.org/wiki/LoRa)
+[LoRa Basics](https://youtu.be/hMOwbNUpDQA)
+[LoRa main page](https://lora-alliance.org/)
+[The Things Network main page](https://www.thethingsnetwork.org/)
