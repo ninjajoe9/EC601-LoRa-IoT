@@ -22,7 +22,7 @@ Currently LoRa Pins is only implemented on the [Heltec32 LoRa 32 v2](https://hel
 
 ## Quick setup guide - A digital implementation of LoRa LED "Pagers"
 
-This is an example of how to use this library to build a mesh of 'pagers' to demonstrate the most basic functionality of the LoRaPins libarary. It allows the user to configure 2 or more Nodes that will recieve a broadcast from any other Node and cause a LED to blink on all the other nodes. Further implementation of addressing and use of multiple pins can be expanded form here, and soon a 'configuration wizard' will be complete to allow for automatic addressing and pin configuration on all nodes. Additionally an example sketch exists [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec_servo/pin_status_send_rec_servo.ino) to use analog values from 0-255 instead of digital on/off values in this implementation for use with analog devices.  
+This is an example of how to use this library to build a mesh of 'pagers' to demonstrate the most basic functionality of the LoRaPins libarary. It allows the user to configure 2 or more Nodes that will recieve a broadcast from any other Node and cause a LED to blink on all the other nodes. Further implementation of addressing and use of multiple pins can be expanded form here, and soon a 'configuration wizard' will be complete to allow for automatic addressing and pin configuration on all nodes. Additionally an example sketch exists [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/SourceCode/Examples/pin_status_send_rec_servo/pin_status_send_rec_servo.ino) to use analog values from 0-255 instead of digital on/off values in this implementation for use with analog devices.  
 
 As mentioned above, LoRaPins is currectly only implemented for Heltec ESP32 LoRa development boards, however use on other boards could be easily implemented by using the `#include "lora.h"` instead of `#include "heltec.h"` at the beginning of your library. Please feel free to reach out if you have any questions with this method. 
 
@@ -44,7 +44,7 @@ Use this wiring diagram to attach and LED and a momentary push button to all Nod
 
 Ensure you have the Heltec ESP32 LoRa Boards imported to your board manager in Ardunio IDE following [this](https://heltec-automation-docs.readthedocs.io/en/latest/esp32+arduino/quick_start.html) guide. 
 
-Download and push the basic [pin_status_from_lib.ino](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_from_lib/pin_status_from_lib.ino) sketch to each board using the arduino IDE. (for best practice, change line 15 of each board `String thisNode = String("Node2");` to give each node a unique name. While failing to do so will not break the code, it will lead to some confusion if you are using serial monitoring to view signal output betwen boards if they are all named the same thing)
+Download and push the basic [pin_status_from_lib.ino](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/SourceCode/Examples/pin_status_from_lib/pin_status_from_lib.ino) sketch to each board using the arduino IDE. (for best practice, change line 15 of each board `String thisNode = String("Node2");` to give each node a unique name. While failing to do so will not break the code, it will lead to some confusion if you are using serial monitoring to view signal output betwen boards if they are all named the same thing)
 
 **Step 4: Attach power and test nodes**
 
@@ -59,7 +59,7 @@ Troublshooting:
 
 - Double check your wiring and pin configuration. If you're not using the same pins as in the diagram, make sure you modify the pins in the code as well. (*WARNING:*  Not all pins on the Heltec ESP32 LoRa board are availible for use like a regular ESP32 microcontroler, as some are predesignated for OLED display and LoRa function.) 
 
-- If you are unable to get the LoRaPins library implemented in to your Arduino Library, try pushing the manually implemented version of the code found [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/Design_sprints/sprint4/pinstatus/pin_status_send_rec/pin_status_send_rec.ino). Then you can just use the embedded functions to handle the LoRa Strings for you. 
+- If you are unable to get the LoRaPins library implemented in to your Arduino Library, try pushing the manually implemented version of the code found [here](https://github.com/ninjajoe9/EC601-LoRa-IoT/blob/main/SourceCode/Examples/pin_status_send_rec/pin_status_send_rec.ino). Then you can just use the embedded functions to handle the LoRa Strings for you. 
 
 - If you are unable to boot to the board and you are stuck in a communication loop `...---...---`, and you're using Analog devices like a potentiometer, ensure the potentiometer isn't causing undue resistance on your circuit during booting and turn the resistance all the way down. 
 
