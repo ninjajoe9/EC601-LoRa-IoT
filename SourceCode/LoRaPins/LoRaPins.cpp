@@ -1,4 +1,4 @@
-
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
 #include "Arduino.h"
 #include "LoRaPins.h"
@@ -7,8 +7,11 @@
 String self = String();
 
 //Recieve variables
-
-
+String inNode = String();
+String s1string = String();
+String v1string = String();
+int sensor1;
+int value;
 
 //Send variabless
 int counter;
@@ -20,22 +23,17 @@ LoRaPins::LoRaPins(String Node)
 }
 
 int LoRaPins::recievePins(){
-    String inNode = String();
-    String s1string = String();
-    String v1string = String();
-    int sensor1;
-    int value;
     int packetSize = LoRa.parsePacket();
   if (packetSize) {
     // received a packet
     Serial.print("Received packet ");
     // read packet
     while (LoRa.available()) {
-      lr.inNode = LoRa.readStringUntil(':');
-      lr.s1string = LoRa.readStringUntil(',');
-      lr.v1string = LoRa.readStringUntil('|');
-      lr.sensor1 = s1string.toInt();
-      lr.value = v1string.toInt();
+      inNode = LoRa.readStringUntil(':');
+      s1string = LoRa.readStringUntil(',');
+      v1string = LoRa.readStringUntil('|');
+      sensor1 = s1string.toInt();
+      value = v1string.toInt();
       }
     // print RSSI of packet
     Serial.print("with RSSI ");
